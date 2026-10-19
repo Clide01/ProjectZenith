@@ -1,7 +1,7 @@
 {
-  "versionCode": 27,
-  "versionName": "1.2",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.2/ProjectZenith-v1.2.apk",
+  "versionCode": 28,
+  "versionName": "1.3",
+  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.3/ProjectZenith-v1.3.apk",
   "mandatory": false,
-  "releaseNotes": "Added bulk app selection to Freeze Apps."
+  "releaseNotes": "Fixed dark/light mode, restored premium labels, improved icons, and improved ad loading."
 }
