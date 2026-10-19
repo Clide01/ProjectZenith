@@ -1,7 +1,7 @@
 {
   "versionCode": 25,
-  "versionName": "3.5",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/3.5/ProjectZenith-v3.5.apk",
-  "mandatory": true,
-  "releaseNotes": "Project Zenith 3.5 update"
+  "versionName": "1.1",
+  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.1/ProjectZenith-v1.1.apk",
+  "mandatory": false,
+  "releaseNotes": "Project Zenith 1.1 update"
 }
