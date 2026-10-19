@@ -14,6 +14,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 internal fun MainActivity.verifyAppSignature() {
+    // Local debug APKs use Android's debug certificate. Keep signature enforcement
+    // for release builds, but allow USB-installed debug builds to be previewed.
+    if (BuildConfig.DEBUG) return
+
     lifecycleScope.launch(Dispatchers.IO) {
         try {
             val currentSignature = getCurrentAppSignature()

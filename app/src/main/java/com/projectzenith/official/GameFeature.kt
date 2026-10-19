@@ -98,7 +98,15 @@ internal fun MainActivity.showGameLauncherDialog() {
         fun launchGame() {
             val launchIntent = pm.getLaunchIntentForPackage(pkgName)
             if (launchIntent != null) {
-                startActivity(launchIntent)
+                val adaptiveGame = getSharedPreferences(Prefs.MAIN, Context.MODE_PRIVATE)
+                    .getString(Prefs.KEY_ADAPTIVE_GAME, null)
+                if (adaptiveGame == pkgName) {
+                    runAdbCommand(adaptiveCommand(pkgName), getString(R.string.toast_adaptive_refreshed)) {
+                        startActivity(launchIntent)
+                    }
+                } else {
+                    startActivity(launchIntent)
+                }
             } else {
                 Toasty.error(this, getString(R.string.toast_launch_fail), Toast.LENGTH_SHORT, true).show()
             }

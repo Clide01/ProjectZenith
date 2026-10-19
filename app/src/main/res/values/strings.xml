@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Project Zenith</string>
-    <string name="tagline">Performance tweaks powered by Shizuku, no root needed</string>
+    <string name="tagline">Your device. Your rules. No root required.</string>
     <string name="chip_all">All</string>
     <string name="chip_performance">Performance</string>
     <string name="chip_display">Display</string>
@@ -14,13 +14,15 @@
     <string name="lbl_sdk_level">SDK LEVEL</string>
     <string name="lbl_display">DISPLAY</string>
     <string name="lbl_free_space">FREE SPACE</string>
-    <string name="lbl_tweaks">Tweaks</string>
+    <string name="lbl_tweaks">Control modules</string>
     <string name="zero_active">0 active</string>
     <string name="badge_free">FREE</string>
     <string name="title_fixed_perf">Enable Fixed Performance</string>
     <string name="desc_fixed_perf">Lock device performance to a fixed state to maintain consistent frame rates.</string>
     <string name="title_optimize">Optimize System Performance</string>
     <string name="desc_optimize">Clear background processes and allocate resources to active applications.</string>
+    <string name="title_presets">Game Performance Presets</string>
+    <string name="desc_presets">Apply a ready-made mix of display and system tweaks for smoother gameplay.</string>
     <string name="title_refresh">Adjust Refresh Rate</string>
     <string name="desc_refresh">Modify the screen refresh rate to balance smooth visuals and battery life.</string>
     <string name="title_network">Improve Network Performance</string>
@@ -47,6 +49,8 @@
     <string name="desc_autoclick">A floating button that automatically taps or swipes the screen at set intervals. Ideal for games that restrict AFK play.</string>
     <string name="title_gamemode">Native Game Mode API</string>
     <string name="desc_gamemode">For Android 12+. Drops system limits and heavily prioritizes CPU/GPU for the selected game.</string>
+    <string name="title_adaptive">Adaptive Gaming Mode</string>
+    <string name="desc_adaptive">Choose a game and automatically select a high-performance or battery-friendly profile.</string>
     <string name="title_thermal">Disable Thermal Throttling</string>
     <string name="desc_thermal">Tricks the device into thinking it is cool to prevent performance drops. WARNING: Device will get hot.</string>
     <string name="title_fstrim">Storage Optimizer (Fstrim)</string>
@@ -121,6 +125,8 @@
     <string name="btn_restore">Restore</string>
     <string name="btn_freeze_anyway">Freeze anyway</string>
     <string name="btn_restore_all_frozen">Restore all frozen apps</string>
+    <string name="btn_clear_selection">Clear selection</string>
+    <string name="btn_select_all_n">Select all shown (%1$s)</string>
     <string name="btn_clear_caches">Clear caches</string>
     <string name="btn_show_button">Show button</string>
     <string name="btn_watch_ad">Watch ad to unlock</string>
@@ -157,6 +163,17 @@
     <string name="toast_already_blocked">Already blocked!</string>
     <string name="toast_storage_already">Storage already optimized recently!</string>
     <string name="msg_sys_optimized">System Optimized (Background processes cleared)</string>
+    <string name="dlg_presets">Game Performance Presets</string>
+    <string name="dlg_presets_msg">Choose a preset. You can reset every change from the card or Reset all functions.</string>
+    <string name="preset_max_fps">Max FPS</string>
+    <string name="preset_max_fps_desc">Prioritize smoothness and high refresh rates.</string>
+    <string name="preset_balanced">Balanced</string>
+    <string name="preset_balanced_desc">A moderate performance boost with sensible defaults.</string>
+    <string name="preset_battery">Battery Saver</string>
+    <string name="preset_battery_desc">Limit refresh rate and reduce background visual effects.</string>
+    <string name="toast_preset_applied">%1$s preset applied</string>
+    <string name="status_preset">Status: %1$s</string>
+    <string name="msg_presets_reset">Game preset reset</string>
     <string name="msg_net_optimized">Network Optimized</string>
     <string name="msg_touch_improved">Touch Latency Improved</string>
     <string name="msg_anim_fast">Animations sped up to 0.5x</string>
@@ -294,6 +311,12 @@
     <string name="toast_no_games">No games found on your device</string>
     <string name="dlg_native_gm">Native Game Mode</string>
     <string name="dlg_native_gm_msg">Pick a game to run in Performance mode.</string>
+    <string name="dlg_adaptive">Adaptive Gaming Mode</string>
+    <string name="dlg_adaptive_msg">Pick a game. The profile uses high refresh and performance mode above 30% battery, and a cooler 60 Hz profile below it.</string>
+    <string name="toast_adaptive_enabled">Adaptive profile enabled for %1$s</string>
+    <string name="toast_adaptive_refreshed">Adaptive profile refreshed</string>
+    <string name="toast_adaptive_reset">Adaptive profile reset</string>
+    <string name="status_adaptive">Status: %1$s</string>
     <string name="toast_gm_blocked">Your device\'s custom OS blocks Native Game Mode. Please use the \'Optimize System\' or \'Launch Game\' buttons instead.</string>
     <string name="dlg_launch_game">Launch a game</string>
     <string name="dlg_launch_game_msg">Choose a game to start.</string>

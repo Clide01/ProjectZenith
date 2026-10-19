@@ -218,6 +218,6 @@
         android:layout_height="54dp"
         android:elevation="10dp"
         android:padding="7dp"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/project_zenith_logo" />
 
 </FrameLayout>

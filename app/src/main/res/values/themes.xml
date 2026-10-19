@@ -1,8 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.ProjectZenith" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryAccent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/overlayAccent</item>
+        <item name="colorTertiary">#D9783B</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#EAF4F0</item>
+        <item name="colorOnSurface">#17201C</item>
+        <item name="colorOnSurfaceVariant">#52635B</item>
+        <item name="android:colorBackground">#F4F8F5</item>
+        <item name="android:navigationBarColor">#F4F8F5</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <item name="android:fontFamily">@font/app_font</item>
     </style>
 

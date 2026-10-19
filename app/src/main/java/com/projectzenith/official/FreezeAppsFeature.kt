@@ -191,6 +191,14 @@ internal fun MainActivity.presentFreezeList(apps: List<AppEntry>) {
     val (searchLayout, searchEdit) = styledField(this, getString(R.string.hint_search_apps), android.text.InputType.TYPE_CLASS_TEXT, topMarginDp = 10)
     val warning = createSystemAppsWarning()
     val list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+    val selectAllButton = MaterialButton(this, null, com.google.android.material.R.attr.materialButtonOutlinedStyle).apply {
+        isAllCaps = false
+        insetTop = 0
+        insetBottom = 0
+        layoutParams = LinearLayout.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT, dp(44)
+        ).apply { topMargin = dp(10) }
+    }
     val sheet = Sheet(this)
 
     fun current(): List<AppEntry> {
@@ -209,6 +217,15 @@ internal fun MainActivity.presentFreezeList(apps: List<AppEntry>) {
         }
         sheet.buttonViews.getOrNull(2)?.visibility =
             if (frozenApps.isNotEmpty()) View.VISIBLE else View.GONE
+
+        val rows = current()
+        val allShownSelected = rows.isNotEmpty() && rows.all { it.pkg in selected }
+        selectAllButton.isEnabled = rows.isNotEmpty()
+        selectAllButton.text = if (allShownSelected) {
+            getString(R.string.btn_clear_selection)
+        } else {
+            getString(R.string.btn_select_all_n, rows.size)
+        }
     }
 
     fun render() {
@@ -266,9 +283,21 @@ internal fun MainActivity.presentFreezeList(apps: List<AppEntry>) {
         override fun afterTextChanged(s: android.text.Editable?) {
             query = s?.toString()?.trim() ?: ""
             render()
+            updateButtons()
         }
     })
     tabs.check(tabIds[0])
+
+    selectAllButton.setOnClickListener {
+        val rows = current()
+        if (rows.isNotEmpty() && rows.all { it.pkg in selected }) {
+            selected.removeAll(rows.map { it.pkg }.toSet())
+        } else {
+            selected.addAll(rows.map { it.pkg })
+        }
+        render()
+        updateButtons()
+    }
 
     fun doChange() {
         val picked = selected.toList()
@@ -295,6 +324,7 @@ internal fun MainActivity.presentFreezeList(apps: List<AppEntry>) {
         .message(getString(R.string.dlg_freeze_apps_msg))
         .content(tabs)
         .content(searchLayout)
+        .content(selectAllButton)
         .content(warning)
         .content(list)
         .button(getString(R.string.btn_close), SheetStyle.TONAL)

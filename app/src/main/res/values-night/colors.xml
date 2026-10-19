@@ -4,21 +4,21 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Our Custom Dark Mode Colors -->
-    <color name="primaryAccent">#E53935</color>
-    <color name="secondaryText">#FFCDD2</color>
-    <color name="dividerAccent">#EF5350</color>
+    <color name="primaryAccent">#B8F27A</color>
+    <color name="secondaryText">#A9BBB1</color>
+    <color name="dividerAccent">#6C9F7C</color>
 
-    <color name="statusText">#1976D2</color>
+    <color name="statusText">#9BE15D</color>
 
-    <color name="translucentSurface">#E6121212</color>
+    <color name="translucentSurface">#E6131D19</color>
 
-    <color name="gradientStart">#7F1D1D</color>
-    <color name="gradientEnd">#D32F2F</color>
+    <color name="gradientStart">#0B2520</color>
+    <color name="gradientEnd">#155C45</color>
 
-    <color name="overlayAccent">#E53935</color>
-    <color name="overlayAccentPressed">#C62828</color>
-    <color name="overlayAccentContainer">#26E53935</color>
-    <color name="overlayStroke">#33FFFFFF</color>
-    <color name="overlaySurfaceVariant">#1FFFFFFF</color>
-    <color name="overlayPressedSurface">#33FFFFFF</color>
+    <color name="overlayAccent">#B8F27A</color>
+    <color name="overlayAccentPressed">#8DCB58</color>
+    <color name="overlayAccentContainer">#26B8F27A</color>
+    <color name="overlayStroke">#335E786A</color>
+    <color name="overlaySurfaceVariant">#1F5E786A</color>
+    <color name="overlayPressedSurface">#335E786A</color>
 </resources>

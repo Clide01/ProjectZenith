@@ -70,6 +70,8 @@ class MainActivity : AppCompatActivity() {
         setupFilterChips()
         setupBottomBarScrollBehavior()
         setupStatusStyling()
+        restoreGamePresetStatus()
+        restoreAdaptiveGamingStatus()
         refreshFreezeStatus()
     }
 

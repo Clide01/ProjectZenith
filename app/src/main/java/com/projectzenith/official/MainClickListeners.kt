@@ -73,6 +73,10 @@ private fun MainActivity.setupTweakCardListeners(prefs: SharedPreferences) {
         }
     }
 
+    findViewById<CardView>(R.id.cardGamePresets).setOnClickListener {
+        showGamePresetDialog()
+    }
+
     findViewById<CardView>(R.id.cardImproveNetwork).setOnClickListener {
         runTweakOnce(
             R.id.tvStatusNetwork, { getString(R.string.w_optimized) }, R.string.toast_already_optimized,
@@ -124,6 +128,10 @@ private fun MainActivity.setupTweakCardListeners(prefs: SharedPreferences) {
             return@setOnClickListener
         }
         handlePremiumFeature { showGameModeSelectorDialog() }
+    }
+
+    findViewById<CardView>(R.id.cardAdaptiveGaming).setOnClickListener {
+        handlePremiumFeature { showAdaptiveGamingDialog() }
     }
 }
 
@@ -222,8 +230,10 @@ private fun MainActivity.setupTweakResetListeners(prefs: SharedPreferences) {
             Toasty.info(this, getString(R.string.toast_no_gm), Toast.LENGTH_SHORT, true).show()
         }
     }
+    findViewById<TextView>(R.id.btnResetAdaptive).setOnClickListener { resetAdaptiveGaming() }
 
     bindStatusReset(R.id.btnResetOptimize, R.id.tvStatusOptimize)
+    findViewById<TextView>(R.id.btnResetGamePresets).setOnClickListener { resetGamePreset() }
     bindStatusReset(R.id.btnResetRamBooster, R.id.tvStatusRamBooster)
     bindStatusReset(R.id.btnResetCache, R.id.tvStatusCache)
     bindStatusReset(R.id.btnResetFstrim, R.id.tvStatusFstrim)
@@ -313,6 +323,8 @@ internal fun MainActivity.resetAllFunctions(prefs: android.content.SharedPrefere
                 .putBoolean(Prefs.KEY_FIXED_PERF_AGGRESSIVE, false)
                 .putBoolean(Prefs.KEY_THERMAL_DISABLED, false)
                 .putString(Prefs.KEY_LAST_GAME_MODE, "")
+                .remove(Prefs.KEY_GAME_PRESET)
+                .remove(Prefs.KEY_ADAPTIVE_GAME)
                 .apply()
 
 
@@ -328,6 +340,8 @@ internal fun MainActivity.resetAllFunctions(prefs: android.content.SharedPrefere
 
             findViewById<TextView>(R.id.tvStatusFixedPerf).text = getString(R.string.status_default)
             findViewById<TextView>(R.id.tvStatusOptimize).text = getString(R.string.status_ready)
+            findViewById<TextView>(R.id.tvStatusGamePresets).text = getString(R.string.status_ready)
+            findViewById<TextView>(R.id.tvStatusAdaptive).text = getString(R.string.status_default)
 
             findViewById<TextView>(R.id.tvStatusFstrim).text = getString(R.string.status_ready)
             findViewById<TextView>(R.id.tvStatusRamBooster).text = getString(R.string.status_ready)
