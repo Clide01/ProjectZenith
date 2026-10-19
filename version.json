@@ -1,7 +1,7 @@
 {
-  "versionCode": 28,
-  "versionName": "1.3",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.3/ProjectZenith-v1.3.apk",
+  "versionCode": 27,
+  "versionName": "1.2",
+  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.3/ProjectZenith-v1.2.apk",
   "mandatory": false,
-  "releaseNotes": "Project Zenith 1.3 improves the control center experience with a working dark/light mode toggle, clearer premium feature labels, improved icons, more reliable ad loading, and bulk app selection in Freeze Apps."
+  "releaseNotes": "Project Zenith 1.2 improves the control center experience with a working dark/light mode toggle, clearer premium feature labels, improved icons, more reliable ad loading, and bulk app selection in Freeze Apps."
 }
