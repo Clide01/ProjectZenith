@@ -3,5 +3,5 @@
   "versionName": "1.3",
   "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.3/ProjectZenith-v1.3.apk",
   "mandatory": false,
-  "releaseNotes": "Fixed dark/light mode, restored premium labels, improved icons, and improved ad loading."
+  "releaseNotes": "Project Zenith 1.3 improves the control center experience with a working dark/light mode toggle, clearer premium feature labels, improved icons, more reliable ad loading, and bulk app selection in Freeze Apps."
 }
