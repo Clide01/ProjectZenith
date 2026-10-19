@@ -1,147 +1,165 @@
 <div align="center">
 
-# 🚀️ Benimaru Tool ⚡️
+# ✦ PROJECT ZENITH ✦
 
-**The Ultimate Rootless Android Optimization & Gaming Utility**
+### Take control of your Android experience.
 
-[![Platform: Android](https://img.shields.io/badge/Platform-Android%2011%2B-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
-[![API: Shizuku](https://img.shields.io/badge/API-Shizuku-blue?logo=android)](https://shizuku.rikka.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+**A rootless Android toolkit for performance tuning, gaming controls, display adjustments, and practical system utilities.**
 
-[![Release](https://img.shields.io/github/v/release/Benimaru-x1k/Benimaru?logo=github&label=Release)](../../releases/latest)
+[![Android](https://img.shields.io/badge/Android-11%2B-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
+[![Powered by Shizuku](https://img.shields.io/badge/Privilege%20Bridge-Shizuku-3978C5?logo=android&logoColor=white)](https://shizuku.rikka.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-F5C542.svg)](LICENSE)
+[![Built with Kotlin](https://img.shields.io/badge/Built%20with-Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+
+[![Latest Release](https://img.shields.io/github/v/release/Benimaru-x1k/Benimaru?logo=github&label=Latest%20release)](../../releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Benimaru-x1k/Benimaru/total?logo=github&label=Downloads&color=brightgreen)](../../releases)
-[![Languages](https://img.shields.io/badge/Languages-Multi--language-0A84FF?logo=googletranslate&logoColor=white)](#)
+[![Languages](https://img.shields.io/badge/Interface-Multilingual-0A84FF?logo=googletranslate&logoColor=white)](#)
 
 </div>
 
-**Benimaru Tool** is a powerful, rootless Android utility application designed to push your device to its limits. By utilizing the [Shizuku](https://shizuku.rikka.app/) API, this app executes advanced ADB shell commands directly from your device—delivering kernel-level performance tweaks, touch latency reduction, and display customization **without requiring root access or a PC** after the initial setup.
+---
+
+## Meet Project Zenith
+
+**Project Zenith** brings useful Android controls into one focused workspace. Built for users who want more say over how their device behaves, Zenith uses the [Shizuku](https://shizuku.rikka.app/) service to run supported ADB shell operations without requiring root access.
+
+Tune selected performance settings, adjust display behavior, access gaming utilities, and manage supported system options directly from your phone. After Shizuku is configured, many tools can be used without connecting to a computer.
+
+> **Designed for control, built with safeguards.** Available operations depend on your Android version, device manufacturer, and system permissions. No tweak can guarantee higher FPS, lower latency, or improved battery life on every device.
 
 ---
 
-## ✨ Features
+## What Zenith brings together
 
-Benimaru Tool is packed with everything you need to optimize your device, categorized for easy navigation.
+### 🎮 Gaming and responsiveness
 
-### 🎮 Gaming & Performance
+| Tool | What it does |
+|:--|:--|
+| **Performance Mode** | Applies the supported fixed-performance setting to help keep performance behavior more consistent during demanding workloads. |
+| **Android Game Mode** | On supported Android 12+ devices, accesses the native Game Mode controls exposed by the system. Results depend on the device and its implementation. |
+| **Touch Response Controls** | Adjusts supported touch-related settings, including long-press behavior and available sampling-rate controls. Hardware limits still apply. |
+| **Game Library and Launch Tools** | Finds installed games for convenient launching and can request supported DEX speed-profile compilation to help reduce some startup or runtime overhead. |
+| **Aim Reference Overlay** | Places a configurable crosshair at the center of the screen for supported use cases. |
+| **Tap and Swipe Automation** | Provides a movable floating control for repeating taps, swipes, or combined actions at a chosen interval, position, and swipe distance. It does not require Accessibility permission. |
 
-| Feature | Description |
-|:--------|:------------|
-| 🚀 **Fixed Performance Mode** | Locks device performance to a fixed state to maintain consistent frame rates during heavy workloads. |
-| 🔥 **Disable Thermal Throttling** | Bypasses software temperature limits to prevent sudden frame drops and CPU throttling during long gaming sessions. |
-| 🕹️ **Native Game Mode API** (Android 12+) | Unlocks deep performance by dropping system power limits and aggressively prioritizing CPU/GPU resources for your active game. |
-| ⚡ **Touch Latency Reduction** | Increases the touch sampling rate and minimizes long-press timeouts for lightning-fast, precise screen interactions. |
-| 🎮 **Game Launcher & Optimizer** | Automatically detects installed games to launch instantly or **pre-compile their DEX code (Speed Profile)** to eliminate in-game stutters. |
-| 🎯 **FPS Crosshair Overlay** | Enable a customizable, center-screen crosshair to improve accuracy in mobile shooters. |
-| 👆 **Auto Click & Auto Swipe** | A draggable floating ▶/■ button that repeats taps or swipes at your chosen interval. Choose Auto click, Auto swipe, or Tap + swipe, and set the interval, tap position and swipe length. No Accessibility permission needed. |
+### 🖥️ Display and interface
 
-### 📺 Display & Visuals
+| Tool | What it does |
+|:--|:--|
+| **Refresh Rate Controls** | Sets supported minimum and maximum display refresh-rate values. Actual refresh behavior remains subject to device capabilities and system policy. |
+| **Resolution Manager** | Changes the supported display resolution and calculates an aspect ratio. A short automatic revert countdown helps recover if the selected resolution causes display problems. |
+| **Reduced Animation Scale** | Lowers system animation scales to make navigation feel quicker. |
+| **Window Blur Control** | On supported Android 12+ devices, disables system window blur effects where the setting is available. |
+| **Light and Dark Appearance** | Switches between light and dark interface themes, with cards designed to remain readable in either mode. |
 
-| Feature | Description |
-|:--------|:------------|
-| 🔄 **Custom Refresh Rate** | Force specific Minimum and Maximum screen refresh rates (e.g., lock your display to a buttery smooth 120Hz). |
-| 📱 **Safe Resolution Changer** | Adjust your display resolution to boost gaming FPS or extend battery life. Includes an **automatic aspect ratio calculator** and a **6-second safe-revert countdown** to prevent permanent black screens. |
-| 💨 **UI Animation Speedup** | Cuts system animation scales in half (0.5x) making app launches and system navigation feel twice as fast. |
-| 🌫️ **Disable Window Blurs** *(Android 12+)* | Frees up valuable GPU resources by turning off expensive real-time background blurs. |
-| 🌗 **Dynamic Theme Engine** | Modern Light/Dark mode toggle featuring beautifully outlined Material Design cards that adapt to your system aesthetic. |
+### 🧰 Device tools and system controls
 
-### 🛠️ System Tweaks & Utilities
+| Tool | What it does |
+|:--|:--|
+| **Live Device HUD** | Displays supported live readings such as CPU frequency, temperature, memory use, battery temperature, and refresh rate in a movable overlay. Available readings vary by device. |
+| **Storage Trim** | Requests the system's supported storage-trim operation to help the storage controller manage blocks that are no longer in use. It is not a guaranteed instant speed boost. |
+| **Network Settings** | Applies the network-related adjustments available to the app. Results depend on Android, the network, and the selected configuration; lower ping is not guaranteed. |
+| **Private DNS Selector** | Lets you choose a supported Private DNS provider, such as Cloudflare, Quad9, or Control D, through Android's settings interface. Provider behavior and filtering depend on the service you select. |
+| **Background Resource Controls** | Offers supported options for reducing background activity and prioritizing the app you are using. Android may restrict what can be changed. |
+| **Gaming Focus** | Suppresses supported heads-up notification interruptions during gameplay. |
+| **Developer Options Toggle** | Provides a shortcut to switch Developer Options off when supported. This does not guarantee that banking apps or games will stop flagging a device or configuration. |
 
-| Feature | Description |
-|:--------|:------------|
-| 📊 **Floating Hardware Monitor** | An MSI Afterburner-style draggable HUD showing live CPU clock & thermals, RAM consumption, battery temps, and refresh rate. Position it anywhere without obstructing gameplay. |
-| 💽 **Storage Optimizer (Fstrim)** | Forces the storage controller to wipe deleted data blocks, instantly restoring optimal read/write speeds. |
-| 📶 **Network Tweaks** | Prioritizes network traffic and reduces ping for a lag-free mobile data experience. |
-| 🌐 **Custom DNS Selector** | Set a system-wide private DNS (Cloudflare, Quad9, Control D, etc.) via ADB for ad blocking and tracker protection—no VPN required. |
-| 🧹 **System Optimization** | Clears background processes and aggressively reallocates resources to your active applications. |
-| 🔕 **Gaming Focus Mode** | Blocks intrusive heads-up notification banners from ruining your matches. |
-| 🏦 **Hide Developer Options** | Instantly toggles off Developer Options so banking apps and anti-cheat games run without triggering security warnings. |
+### 🔐 Built for everyday use
 
-### ⚙️ App Experience
-
-| Feature | Description |
-|:--------|:------------|
-| 🛡️ **Anti-Tamper Security** | Built-in SHA-256 signature verification prevents the execution of modified, repackaged, or unofficial APKs. |
-| 📲 **In-App Auto Updater** | Automatically pings the official GitHub repository for new releases and handles seamless updates internally. |
-| ⏪ **One-Tap Reset** | Panic button to instantly revert all tweaks back to your device's stock default settings. |
+| Capability | What it means |
+|:--|:--|
+| **APK Integrity Check** | Uses SHA-256 signature verification to help detect modified or unofficial application packages before supported actions proceed. |
+| **Release Checker and Updater** | Checks the configured official GitHub release source and offers an in-app update flow. |
+| **Restore Defaults** | Provides a single place to reset supported tweaks to their default values. Review the reset behavior before relying on it to reverse every device-specific change. |
 
 ---
 
-## 📸 Screenshots
+## Preview
 
 <table align="center">
   <tr>
-    <th align="center">Home Screen</th>
-    <th align="center">Tweaks Menu</th>
-    <th align="center">Launch Optimize</th>
+    <th align="center">Zenith Home</th>
+    <th align="center">System Controls</th>
+    <th align="center">Device Monitor</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/Screenshot_20261007_135942_Benimaru.png" width="250" alt="Benimaru Tool Home Screen" /></td>
-    <td align="center"><img src="images/Screenshot_20261007_140005_Benimaru.png" width="250" alt="Benimaru Tool Tweaks Menu" /></td>
-    <td align="center"><img src="images/Screenshot_20261007_140013_Benimaru.png" width="250" alt="Benimaru Tool Hardware Monitor" /></td>
+    <td align="center"><img src="images/Screenshot_20261007_135942_Benimaru.png" width="250" alt="Project Zenith home screen" /></td>
+    <td align="center"><img src="images/Screenshot_20261007_140005_Benimaru.png" width="250" alt="Project Zenith system controls" /></td>
+    <td align="center"><img src="images/Screenshot_20261007_140013_Benimaru.png" width="250" alt="Project Zenith device monitor" /></td>
   </tr>
 </table>
 
----
-
-## 📋 Prerequisites
-
-> [!IMPORTANT]
-> Because Benimaru Tool modifies secure system settings, it **requires Shizuku** to function.
-
-| Step | Requirement | Details |
-|:----:|:------------|:--------|
-| 1 | **Install Shizuku** | If you do not have it, Benimaru Tool will prompt you to safely download it from the official GitHub repository. |
-| 2 | **Activate Shizuku** | Start the Shizuku service via **Wireless Debugging (Android 11+)** or via ADB from a computer. [Read the official Shizuku setup guide here](https://shizuku.rikka.app/guide/setup/). |
-| 3 | **Grant Overlay Permissions** | To use the Floating Hardware Monitor, Crosshair Overlay, Auto Click & Swipe button, and Floating Menu, grant the *"Display over other apps"* permission when prompted. |
+*The current image filenames retain their original names. They can be renamed separately if you want the repository assets to match the new branding.*
 
 ---
 
-## 🚀 Installation
+## Before you start
 
-| Step | Action |
-|:----:|:-------|
-| 1 | Navigate to the [Releases](../../releases) page. |
-| 2 | Download the latest `BenimaruTool-vX.X.apk`. |
-| 3 | Install the APK on your Android device. |
-| 4 | Ensure the **Shizuku** app is installed and actively running in the background. |
-| 5 | Open Benimaru Tool and tap **Allow** when prompted for Shizuku access. |
-| 6 | Grant the **"Display over other apps"** permission to enable floating services. |
-| 7 | Start tweaking! 🎉 |
+Project Zenith relies on **Shizuku** for operations that need elevated ADB-shell privileges. It does not require root, but it does require Shizuku to be installed, started, and authorized.
 
----
+1. **Install Shizuku.** Use the official [Shizuku project](https://github.com/RikkaApps/Shizuku) or its [setup guide](https://shizuku.rikka.app/guide/setup/).
+2. **Start the service.** On Android 11 and newer, Wireless debugging is a common setup method. A computer and ADB can also be used where appropriate.
+3. **Authorize Zenith.** Open Project Zenith and approve its Shizuku access request.
+4. **Allow overlays when needed.** The floating monitor, crosshair, and automation controls need the Android “Display over other apps” permission.
+5. **Check compatibility.** Some controls are available only on particular Android versions or device implementations.
 
-## 🛠️ Built With
-
-| Technology | Purpose |
-|:-----------|:--------|
-| **[Kotlin](https://kotlinlang.org/)** | 100% native Android development. |
-| **[Material 3](https://m3.material.io/)** | Modern, responsive UI utilizing `MaterialCardView` for dynamic themes and programmatically generated dialogs. |
-| **[Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)** | Ensuring smooth, non-blocking background task execution. |
-| **[Shizuku API](https://github.com/RikkaApps/Shizuku-API)** | The magic behind executing elevated ADB commands without root. |
-| **[Toasty](https://github.com/GrenderG/Toasty)** | Clean, stylized success and error popups. |
+Grant only the permissions required for the tools you intend to use.
 
 ---
 
-## ⚠️ Disclaimer
+## Install Project Zenith
 
-> [!WARNING]
-> **Use at your own risk.**
-> While Benimaru Tool is built with safety fail-safes (such as the 6-second resolution revert timer), forcing unsupported refresh rates, extreme resolutions, or disabling thermal limits on certain hardware configurations can cause system instability, overheating, or UI glitches. The developer is not responsible for bricked devices, bootloops, or hardware damage.
->
-> **Auto Click & Auto Swipe** automates screen input. Some games detect automated input and may penalize or ban accounts, so use it only where the game's rules allow it.
+1. Open the project's [Releases](../../releases) page.
+2. Download the latest available Zenith APK.
+3. Install the APK on your Android device. If Android asks, allow installation from the source you used.
+4. Make sure Shizuku is running.
+5. Launch Project Zenith and approve the Shizuku permission prompt.
+6. Grant overlay permission if you plan to use floating tools.
+7. Review each setting before applying it.
+
+**Download only builds from a source you trust.** If an installation or update fails, check the release notes and your device's Android version before trying again.
 
 ---
 
-## 📝 License
+## Technology
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+| Component | Role |
+|:--|:--|
+| [Kotlin](https://kotlinlang.org/) | Native Android application development. |
+| [Material Design 3](https://m3.material.io/) | Interface components and adaptable visual styling. |
+| [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) | Runs supported background work without blocking the interface. |
+| [Shizuku API](https://github.com/RikkaApps/Shizuku-API) | Enables authorized ADB-shell operations without root. |
+| [Toasty](https://github.com/GrenderG/Toasty) | Styled feedback messages for supported actions. |
+
+---
+
+## Safety notes
+
+Project Zenith changes Android settings and can expose device-specific limitations. **Use every control at your own discretion.**
+
+- Unsupported refresh rates or display resolutions may cause visual glitches or temporarily make the screen difficult to use. The resolution revert countdown is a safeguard, not a guarantee.
+- Disabling or attempting to bypass thermal protections can lead to overheating, instability, reduced hardware lifespan, or unexpected shutdowns. Do not use settings that compromise your device's thermal safety.
+- Performance, touch response, network behavior, and battery life vary by hardware, firmware, workload, and environment. Improvements are not guaranteed.
+- Automated taps and swipes may violate the rules of some games or services. Use automation only where permitted; account penalties may apply.
+- Turning off Developer Options does not guarantee that an application will accept the device or bypass its security checks.
+- Reset tools can only restore the settings they are designed to manage. Check important changes manually if your device behaves unexpectedly.
+
+The project is provided **“as is,” without warranty**, subject to the terms of the MIT License. The maintainers are not responsible for damage, data loss, account penalties, or other consequences resulting from use.
+
+---
+
+## License
+
+Project Zenith is distributed under the **MIT License**. See [LICENSE](LICENSE) for the full terms.
 
 ---
 
 <div align="center">
 
+### Built for control. Tuned for your device.
 
-If you like Benimaru Tool, make sure to **star this repo** — it helps the project grow and keeps the updates coming!
+If Project Zenith is useful to you, consider starring the repository, reporting reproducible issues, and contributing improvements.
+
+**Project Zenith — make your Android setup work your way.**
 
 </div>
