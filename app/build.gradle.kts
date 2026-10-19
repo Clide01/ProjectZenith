@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.benimaru.official"
+    namespace = "com.projectzenith.official"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.benimaru.official"
+        applicationId = "com.projectzenith.official"
         minSdk = 24
         targetSdk = 37
         versionCode = 25
