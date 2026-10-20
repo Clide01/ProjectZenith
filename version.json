@@ -1,7 +1,7 @@
 {
-  "versionCode": 29,
-  "versionName": "1.4",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.4/ProjectZenith-v1.4.apk",
-  "mandatory": false,
-  "releaseNotes": "ProjectZenith 1.4 fixes the premium login 404 error, updates the login data source to the correct branch, and includes improved account verification and app reliability."
+  "versionCode": 30,
+  "versionName": "1.5",
+  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.5/ProjectZenith-v1.5.apk",
+  "releaseNotes": "Added premium per-game performance profiles, launch-time profile application, automatic restoration of previous settings, and UI improvements.",
+  "mandatory": false
 }
