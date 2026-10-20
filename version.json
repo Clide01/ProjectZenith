@@ -1,7 +1,7 @@
 {
-  "versionCode": 30,
-  "versionName": "1.5",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.5/ProjectZenith-v1.5.apk",
-  "releaseNotes": "Added premium per-game performance profiles, launch-time profile application, automatic restoration of previous settings, and UI improvements.",
+  "versionCode": 31,
+  "versionName": "1.6",
+  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.6/ProjectZenith-v1.6.apk",
+  "releaseNotes": "Fixed crosshair color updates, hardened Shizuku shell execution, prevented unintended overlay service restarts, and improved overlay cleanup.",
   "mandatory": false
 }
