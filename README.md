@@ -89,8 +89,6 @@ Tune selected performance settings, adjust display behavior, access gaming utili
   </tr>
 </table>
 
-*The current image filenames retain their original names. They can be renamed separately if you want the repository assets to match the new branding.*
-
 ---
 
 ## Before you start
