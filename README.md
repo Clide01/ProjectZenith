@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✦ PROJECT ZENITH ✦
+#  PROJECT ZENITH 
 
 ### Take control of your Android experience.
 
