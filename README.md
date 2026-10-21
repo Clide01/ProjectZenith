@@ -83,9 +83,9 @@ Tune selected performance settings, adjust display behavior, access gaming utili
     <th align="center">Device Monitor</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/Screenshot_20261007_135942_Benimaru.png" width="250" alt="Project Zenith home screen" /></td>
-    <td align="center"><img src="images/Screenshot_20261007_140005_Benimaru.png" width="250" alt="Project Zenith system controls" /></td>
-    <td align="center"><img src="images/Screenshot_20261007_140013_Benimaru.png" width="250" alt="Project Zenith device monitor" /></td>
+    <td align="center"><img src="images/Screenshot_20261021-092329.png" width="250" alt="Project Zenith home screen" /></td>
+    <td align="center"><img src="images/Screenshot_20261021-092401.png" width="250" alt="Project Zenith system controls" /></td>
+    <td align="center"><img src="images/Screenshot_20261021-092420.png" width="250" alt="Project Zenith device monitor" /></td>
   </tr>
 </table>
 
