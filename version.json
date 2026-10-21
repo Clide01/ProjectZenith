@@ -3,5 +3,5 @@
     "versionName":  "2.0",
     "apkUrl":  "https://github.com/Clide01/ProjectZenith/releases/latest/download/ProjectZenith.apk",
     "releaseNotes":  "Moves website Premium purchases to Paddle Live with server-verified checkout notifications, transaction-based license activation, device limits, entitlement validation, and refund or chargeback revocation. Removes obsolete Lemon Squeezy configuration. Keeps Google Play Billing available as a separate in-app purchase option. Includes the combined 1.7–1.9 improvements: Premium Session Guard, device-reported refresh rates, Private DNS checks, settings restore points, expanded reset behavior, improved game profiles and overlays, AdMob, refreshed light/dark interface, and 13 app languages. Debug builds use Google demo ad units; release builds use ProjectZenith AdMob units and are subject to AdMob approval and serving status.",
-    "mandatory":  false
+    "mandatory":  true
 }
