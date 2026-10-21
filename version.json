@@ -1,7 +1,7 @@
-{
-  "versionCode": 31,
-  "versionName": "1.6",
-  "apkUrl": "https://github.com/Clide01/ProjectZenith/releases/download/1.6/ProjectZenith-v1.6.apk",
-  "releaseNotes": "Fixed crosshair color updates, hardened Shizuku shell execution, prevented unintended overlay service restarts, and improved overlay cleanup.",
-  "mandatory": false
+﻿{
+    "versionCode":  34,
+    "versionName":  "1.9",
+    "apkUrl":  "https://github.com/Clide01/ProjectZenith/releases/download/1.9/ProjectZenith-v1.9.apk",
+    "releaseNotes":  "Major update combining the 1.7, 1.8, and 1.9 work. Adds Premium Session Guard game profiles, device-reported refresh-rate scanning, Private DNS checks, settings restore points, and expanded reset and logout behavior. Improves game profiles, frozen-app and overlay handling, Shizuku shell execution, system status, Premium purchase flows, and AdMob loading and cleanup. Refreshes the interface with module search and light/dark themes. Adds 13 app languages, fills missing Portuguese strings, localizes the dashboard, and fixes header layout and the Portuguese Premium label. Debug builds use Google demo ad units; release builds use ProjectZenith AdMob units and are subject to AdMob approval and serving status.",
+    "mandatory":  false
 }
